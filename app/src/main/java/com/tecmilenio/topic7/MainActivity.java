@@ -12,10 +12,10 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button buttonUp;
-    private Button buttonLeft;
+    private Button buttonSig;
+    /*private Button buttonLeft;
     private Button buttonRight;
-    private Button buttonDown;
+    private Button buttonDown;*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,17 +28,17 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        buttonUp = findViewById(R.id.buttonUp);
-        buttonLeft = findViewById(R.id.buttonLeft);
+        buttonSig = findViewById(R.id.buttonSig);
+        /*buttonLeft = findViewById(R.id.buttonLeft);
         buttonRight = findViewById(R.id.buttonRight);
-        buttonDown = findViewById(R.id.buttonDown);
+        buttonDown = findViewById(R.id.buttonDown);*/
 
-        buttonUp.setOnClickListener(view ->{
+        buttonSig.setOnClickListener(view ->{
             Intent myIntent = new Intent(MainActivity.this, MainActivity2.class);
             startActivity(myIntent);
         });
 
-        buttonLeft.setOnClickListener(view ->{
+        /*buttonLeft.setOnClickListener(view ->{
             Intent myIntent = new Intent(MainActivity.this, MainActivity3.class);
             startActivity(myIntent);
         });
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         buttonDown.setOnClickListener(view ->{
             Intent myIntent = new Intent(MainActivity.this, MainActivity5.class);
             startActivity(myIntent);
-        });
+        });*/
 
 
     }
